@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senhas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="anonimo.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-section">
+            <img class="imagem" src="anonimo.png" alt="">
+            <h1>Gerador e Avaliação de Senhas</h1>
+            <div class="tabs">
+                <!-- Botões que, ao serem clicados, chamam a função showTab para alternar entre as abas de geração e avaliação de senhas -->
+                <button onclick="showTab('generate')">Gerar Senha</button>
+                <button onclick="showTab('evaluate')">Avaliar Senha</button>
+            </div>
+            
+        </div>
+    
+        <div class="content-section">
+            <div id="generate" class="tab-content">
+                <h2>Gerador de senhas</h2>
+                <label for="length">Comprimento da Senha:</label>
+                <input type="number" id="length" value="12" min="4" max="32">
+                <br>
+                <label for="custom-word">Incluir Palavra Personalizada:</label>
+                <input type="text" id="custom-word" placeholder="Digite uma palavra">
+                <br>
+                <p>Incluir:</p>
+                <p><input type="checkbox" id="uppercase" checked>Letras Maiúsculas (A-Z)</p>
+                <p><input type="checkbox" id="lowercase" checked>Letras Minúsculas (a-z)</p>
+                <p><input type="checkbox" id="numbers" checked>Números (0-9)</p>
+                <p><input type="checkbox" id="special" checked>Especiais (!@#$%^&*)</p>
+                <br>
+                <button onclick="generatePassword()">Gerar</button>
+                <p><strong>Senha: </strong><span id="generated-password"></span></p>
+            </div>
+            <div id="evaluate" class="tab-content" style="display: none;">
+                <h2>Avaliação de Senha</h2>
+                <label for="password-input">Digite sua senha:</label>
+                <input type="text" id="password-input" oninput="evaluatePassword()">
+                <p><strong>Força:</strong> <span id="password-strength"></span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

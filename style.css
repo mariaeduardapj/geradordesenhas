@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    padding: 20px;
+}
+
+.container {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-section {
+    flex: 1 1 30%; 
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.content-section {
+    flex: 1 1 70%;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    font-family: 'Signika Negative', Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    text-align: left;
+    overflow: hidden;
+    min-width: 200px;
+}
+h2 {
+    font-family: 'Signika Negative', Arial, Helvetica, sans-serif;
+}
+.imagem {
+    float: right;
+    width: 150px; 
+}
+
+.tabs {
+    margin: 10px 0;
+}
+
+.tabs button {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+}
+
+.tabs button:hover {
+    background-color: #0056b3;
+}
+
+.tab-content {
+    margin-top: 20px;
+}
+
+
+input[type="checkbox"] {
+    margin: 0px;
+    padding: 0px;
+    width: 20px; 
+}
+
+input {
+    padding: 5px;
+    margin: 10px;
+    width: 80%;
+}
+
+button {
+    padding: 10px;
+    background: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background: #218838;
+}

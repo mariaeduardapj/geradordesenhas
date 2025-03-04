@@ -1,0 +1,2 @@
+# geradordesenhas
+ Este projeto é um gerador de senhas fortes, que permite criar senhas seguras e avaliar a força de senhas digitadas, fornecendo feedback sobre sua robustez. O gerador pode criar senhas aleatórias com combinações de números, letras maiúsculas, minúsculas e caracteres especiais, garantindo maior segurança. Além disso, o sistema avalia a segurança de senhas inseridas, ajudando o usuário a escolher senhas mais protegidas.
